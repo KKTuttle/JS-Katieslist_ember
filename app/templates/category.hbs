@@ -1,0 +1,8 @@
+<h2>Category: {{model.name}}</h2>
+
+{{#each model.listings as |listing|}}
+  <h2>{{listing.title}}</h2>
+    <h3>{{listing.description}}</h3>
+    <h3>{{listing.note}}</h3>
+    <img src="{{listing.image}}" alt="{{listing.title}}"/>
+{{/each}}
